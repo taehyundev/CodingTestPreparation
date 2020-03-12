@@ -21,9 +21,11 @@ int main() {
 			temp = i;
 		}
 	}
-
+	//left right 로 나눔 분할 탐색 메커니즘
 	left(temp, K - 1);
 	right(temp, K - 1);
+	// 앞쪽 끝과 뒷쪽 끝에 묶인 묶음이 딱 k-1이면 양쪽에 있던 남는 묶음에 한묶음이 되므로
+	//cnt--를 해준다.
 	if (rear_n + front_n == K-1) {
 		cnt--;
 	}
